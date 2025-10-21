@@ -17,7 +17,7 @@
 2. **Silver**: normalización (tiempos→ms, compuestos S/M/H/I/W, stints, `rain_flag`).
 3. **Gold**: unión final por piloto → `driver_strategy.parquet` + `train/test`.
 
-## Comandos mínimos (ver más abajo “Qué correr”)
+## Comandos mínimos
 - `make setup`
 - `make one SEASON=2022 EVENT=Silverstone`
 - `make all_range START=2018 END=2024`
