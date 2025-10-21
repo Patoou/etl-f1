@@ -1,0 +1,29 @@
+# src/etl/gold/schema.py
+SCHEMA = {
+  "name": "driver_strategy",
+  "key": ["season","race_id","driver_number"],
+  "columns": {
+    "season": "int",
+    "race_id": "str",
+    "event": "str",
+    "location": "str",
+    "driver": "str",
+    "driver_number": "int",
+    "team": "str",
+    "grid": "int",
+    "final_pos": "int|null",
+    "rain_flag": "int{0,1}",
+    "pit_count": "int>=0",
+    "stint_count": "int>=1",
+    "strategy_key": "pattern(^([SMHIW]-?)*$)",
+    "stint_laps": "list<int>=1",
+    "compounds": "list<str in {S,M,H,I,W} unique order-preserving>",
+    "first_compound": "str|null",
+    "last_compound": "str|null",
+    "unique_comp_count": "int>=0",
+    "avg_stint_len": "float",
+    "uses_wet": "int{0,1}",
+    "order_kendall_tau": "float|-1..1",
+    "total_laps": "int>=1"
+  }
+}
