@@ -4,9 +4,25 @@
   "test_glob": "data/gold/*/test.parquet",
   "schema_glob": "data/gold/*/schema.json",
   "required_columns": [
-    "season","race_id","driver","driver_number","team","grid","final_pos",
-    "rain_flag","pit_count","stint_count","strategy_key","stint_laps",
-    "compounds","first_compound","last_compound","unique_comp_count",
-    "avg_stint_len","uses_wet","order_kendall_tau","total_laps"
+    "season",
+    "race_id",
+    "driver",
+    "driver_number",
+    "team",
+    "grid",
+    "final_pos",
+    "rain_flag",
+    "pit_count",
+    "stint_count",
+    "strategy_key",
+    "stint_laps",
+    "compounds",
+    "first_compound",
+    "last_compound",
+    "unique_comp_count",
+    "avg_stint_len",
+    "uses_wet",
+    "order_kendall_tau",
+    "total_laps"
   ]
 }
